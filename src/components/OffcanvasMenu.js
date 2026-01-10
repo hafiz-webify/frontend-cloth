@@ -11,14 +11,16 @@ function OffcanvasMenu({ show, handleClose }) {
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Nav className="flex-column">
+          <Nav.Link onClick={() => navigate("/home")}>Home</Nav.Link>
+         
           <Nav.Link onClick={() => navigate("/packing")}>Packing</Nav.Link>
           <Nav.Link onClick={() => navigate("/shop-stock")}>Shop Stock</Nav.Link>
           <Nav.Link onClick={() => navigate("/embroidery-details")}>Embroidery Details</Nav.Link>
           <Nav.Link onClick={() => navigate("/reports")}>Reports</Nav.Link>
           <Nav.Link onClick={() => navigate("/fabric-details")}>Fabric Details</Nav.Link>
-          </Nav>
-          </Offcanvas.Body>
-
+           
+                </Nav>
+      </Offcanvas.Body>
     </Offcanvas>
   );
 }
